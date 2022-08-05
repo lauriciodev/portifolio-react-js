@@ -17,6 +17,26 @@ gap: ${props => `${props.gapContainerSet}px`};
 & > a{
   color: aliceblue;
   font-size: 1.4rem;
+  text-decoration:none;
+  transition: all .2s;
+}
+
+
+& > a:hover{
+  color: black;
+}
+`
+
+export const ContainerIcon = styled.div`
+display:${props  => props.displayContainerIconSet};
+align-items: ${props => props.alignContainerIconSet};
+justify-content: ${props => props.justifyContainerIconSet};
+width: ${props => `${props.widthContainerIconSet}%`};
+padding-left: ${props => `${props.paddingLeftContainerIcons}px`};
+
+& > svg{
+  font-size: 1.5rem;
+  color: beige;
 }
 
 

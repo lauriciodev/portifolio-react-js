@@ -8,7 +8,7 @@ const Global = createGlobalStyle`
     box-sizing: border-box;
 }
 body{
-   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #f2f2f2;
 }
 

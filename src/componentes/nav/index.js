@@ -1,5 +1,6 @@
 import  * as C  from "./style";
 import { Link } from "react-router-dom";
+import { FaToggleOff } from "react-icons/fa";
 
 export const Nav = (props) =>{
   return(
@@ -15,6 +16,15 @@ export const Nav = (props) =>{
     gapContainerSet={"10"}
     paddingTopContainerSet={"20"}
     >
+      <C.ContainerIcon 
+      paddingLeftContainerIcons={"35"}
+      widthContainerIconSet={"87"}
+      displayContainerIconSet={"flex"}
+      alignContainerIconSet={"center"}
+      justifyContainerIconSet={"flex-end"}>
+         <FaToggleOff/>
+      </C.ContainerIcon>
+
       <C.FotoContainer widthFotoContainerSet={"100"} 
       maxWidthFotoContainerSet={"210"}
       >
@@ -22,11 +32,11 @@ export const Nav = (props) =>{
 
       </C.FotoContainer>
       
-      <Link to="/sobre">sobre</Link>
-      <Link to="/sobre">sobre</Link>
-      <Link to="/sobre">sobre</Link>
-      <Link to="/sobre">sobre</Link>
-      <Link to="/sobre">sobre</Link>
+      <Link to="/">Home</Link>
+      <Link to="/sobre">Sobre</Link>
+      <Link to="/projetos">Projetos</Link>
+      <Link to="/linguagems">Linguagems</Link>
+      <Link to="/contato">Contato</Link>
     </C.Container>
   )
 }
