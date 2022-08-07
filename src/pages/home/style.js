@@ -52,8 +52,16 @@ flex-wrap: wrap;
   text-decoration: none;
   border: 1px solid #3e838c;
   transition: all .3s;
+
+ 
   
 }
+
+& > svg{
+    font-size: 2rem;
+    color: #010d23;
+  }
+
 & > a:hover{
   background-color: #afcacc;
   color: #010d23;;
@@ -61,9 +69,7 @@ flex-wrap: wrap;
   border: 1px solid #010d23;
   
 
-  & > svg{
-    color: #010d23;
-  }
+ 
 }
 
 
