@@ -4,7 +4,7 @@ import { FaArrowLeft,FaInstagram } from "react-icons/fa";
 import { useState } from 'react';
 
 export const Nav = (props) =>{
-  const [iconStatus, setIconStatus] = useState(true)
+  const [iconStatus, setIconStatus] = useState(false)
 
 //iconToggle
 const changeToggle = () =>{
@@ -16,7 +16,7 @@ const changeToggle = () =>{
   return(
 
     <C.Container 
-    backGroundColorContainerSet={"#a1c4c1"} 
+    backGroundColorContainerSet={"#010d23"} 
     heightContainerSet={"100"}
     widthContainerSet={iconStatus?"300":"0"}
     displayContainerSet={"flex"}
@@ -30,7 +30,7 @@ const changeToggle = () =>{
       onClick={
         changeToggle
       }
-      backgroundColorIconSet={"#063940"}
+      backgroundColorIconSet={"#038bbb"}
       rotateIconSet={iconStatus?"0":"180"}
       widthContainerIconSet={"40"}
       heightContainerIconSet={"40"}
@@ -42,20 +42,20 @@ const changeToggle = () =>{
 
       <C.FotoContainer displayFotoContainerSet={iconStatus?"block":"none"} 
       widthFotoContainerSet={"100"} 
-      maxWidthFotoContainerSet={"210"}
+      maxWidthFotoContainerSet={"120"}
       >
         <img src={props.Foto} />
 
       </C.FotoContainer >
-      <C.socialIcon displaySocialLinkSet={iconStatus?"block":"none"}>mohamed_lau.sql <FaInstagram/> </C.socialIcon>
+      <C.socialIcon href='https://instagram.com/mohamed_lau.sql' target="_blank" displaySocialLinkSet={iconStatus?"block":"none"}>mohamed_lau.sql <FaInstagram/> </C.socialIcon>
 
 
       <C.ContainerLinks displayContainerLinkSet={iconStatus?"flex":"none"}>
-      <Link to="/">Home</Link>
-      <Link to="/sobre">Sobre</Link>
-      <Link to="/projetos">Projetos</Link>
-      <Link to="/linguagens">Linguagens</Link>
-      <Link to="/contato">Contato</Link>
+      <Link onClick={changeToggle} to="/">Home</Link>
+      <Link onClick={changeToggle} to="/sobre">Sobre</Link>
+      <Link onClick={changeToggle} to="/projetos">Projetos</Link>
+      <Link onClick={changeToggle} to="/linguagens">Linguagens</Link>
+      <Link onClick={changeToggle} to="/contato">Contato</Link>
       
       </C.ContainerLinks>
 

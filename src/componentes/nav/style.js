@@ -14,13 +14,17 @@ flex-direction: ${props => props.flexDirectionSer};
 gap: ${props => `${props.gapContainerSet}px`};
 transition: all .3s;
 
+@media screen and (max-width:400px){
+  position: fixed;
+}
 
 `
 
 export const socialIcon = styled.a`
 text-decoration: none;
 display: ${props => props.displaySocialLinkSet};
-font-size: 1.3rem;
+font-size: 1rem;
+color: #038bbb;
 `
 
 
@@ -38,6 +42,12 @@ position: absolute;
 left: 10px;
 border-radius: 10px;
 transition: all .3s;
+cursor: pointer;
+
+
+&:hover{
+  background-color: #3ab1d5;
+}
 
 & > svg{
   transition: all .3s;
@@ -60,8 +70,8 @@ position: relative;
 
 
 & > a{
-  font-weight: 600;
-  color:#3c3c3c;
+  font-weight: 400;
+  color:#ffff;
   font-size: 1.4rem;
   text-decoration:none;
   transition: all .2s;
@@ -71,20 +81,20 @@ position: relative;
 & > a::after{
   content: "";
   position: absolute;
-  background-color:#063940;
+  background-color:#038bbb;
   border-radius: 100%;
   right: -25px;
 }
 
 
 & > a:hover::after{
-  background-color:#063940;
+  background-color:#038bbb;
   width: 20px;
   height: 20px;
-  color: #063940;
+  color: #038bbb;
 }
 & > a:hover{
-  color: #063940;
+  color: #038bbb;
 }
 `
 
@@ -94,6 +104,7 @@ display: ${props => props.displayFotoContainerSet};
 width: ${ props => `${props.widthFotoContainerSet}%`};
 max-width: ${props => `${props.maxWidthFotoContainerSet}px`};
 border-radius: 100%;
+padding-top: 30px;
 
 
 & > img{
