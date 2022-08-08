@@ -53,7 +53,6 @@ const changeToggle = () =>{
       <C.ContainerLinks displayContainerLinkSet={iconStatus?"flex":"none"}>
       <Link onClick={changeToggle} to="/">Home</Link>
       <Link onClick={changeToggle} to="/sobre">Sobre</Link>
-      <Link onClick={changeToggle} to="/projetos">Projetos</Link>
       <Link onClick={changeToggle} to="/linguagens">Linguagens</Link>
       <Link onClick={changeToggle} to="/contato">Contato</Link>
       
