@@ -17,9 +17,9 @@ body{
 
 
 export const Container = styled.div`
-display: ${props => props.displayContainerSet};
-align-items: ${props => props.alignContainerSet};
-justify-content: ${props => props.justifyContainerSet};
+    display: ${props => props.displayContainerSet || 'block'};
+    align-items: ${props => props.alignContainerSet || 'flex-start'};
+    justify-content: ${props => props.justifyContainerSet || 'flex-start'};
 `
 
 export default Global
