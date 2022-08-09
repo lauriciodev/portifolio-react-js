@@ -1,6 +1,6 @@
 import * as C from "./style"
 
-export const Sobre = (props) =>{
+export const Historia = (props) =>{
   return(
     <C.ContainerSobre>
       <C.ContainerText>

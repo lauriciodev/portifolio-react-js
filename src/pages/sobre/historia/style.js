@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const ContainerSobre = styled.div`
 background: linear-gradient(to top , #03223f,#afcacc) ;
-width: 100vw;
+width: 100%;
 height: 100vh;
 display: flex;
 justify-content: center;
