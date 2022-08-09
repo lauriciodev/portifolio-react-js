@@ -23,6 +23,7 @@ function App() {
         <Route path="sobre/*" element={<Sobre FotoSobre={FotoSobre} />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="*" element={<NotFound />} />
+        
       </Routes>
 
       <Global />
