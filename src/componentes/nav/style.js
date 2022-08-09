@@ -15,6 +15,7 @@ gap: ${props => `${props.gapContainerSet}px`};
 transition: all .3s;
 
 position: fixed;
+border-right: 3px solid  #0abfbc;
 
 `
 

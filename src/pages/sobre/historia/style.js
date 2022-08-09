@@ -3,13 +3,13 @@ import styled from 'styled-components';
 
 export const ContainerSobre = styled.div`
 width: 100%;
-max-width: 900px;
-height: 500px;
+max-width: 800px;
+height: 340px;
+border-radius: 30px;
 display: flex;
 justify-content: center;
 gap: 20px;
-padding-top: 50px;
-flex-wrap: wrap;
+padding: 20px;
 background-color: #010d23;
 
 `
@@ -17,18 +17,15 @@ export const ContainerText = styled.div`
 width: 100%;
 
 padding: 10px;
-max-height: 240px;
-border-radius: 10px;
 color: white;
-border: 1px solid #3e838c;
-max-width: 400px;
+max-width: 700px;
 
 `
 
 
 export const ContainerPhoto = styled.div`
 width: 100%;
-max-width: 200px;
+max-width: 300px;
 
 & > img{
   width: 100%;
@@ -37,7 +34,7 @@ max-width: 200px;
 }
 
 @media screen and (max-width:670px) {
-  & > img{
+  {
     display: none;
   }
 }

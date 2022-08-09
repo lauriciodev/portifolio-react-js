@@ -2,12 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.div`
  width: 100%;
+ height: 100vh;
  display: flex;
  align-items: center;
  justify-content: center;
  padding:  59px 10px 0 10px;
  gap: 20px;
  flex-direction: column;
+ background-color: #045071;
 `
 
 export const SubContainer = styled.div`
