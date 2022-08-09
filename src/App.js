@@ -6,9 +6,7 @@ import { Sobre } from "./pages/sobre";
 import Foto from "./assets/img/lauricio.jpg";
 import FotoSobre from "./assets/img/laug1.jpg";
 import { Contato } from "./pages/contato";
-import { Projetos } from "./pages/sobre/projetos";
-import { Historia } from "./pages/sobre/historia";
-import { Linguagens } from "./pages/sobre/linguagens";
+
 
 function App() {
   const flexContainer = {

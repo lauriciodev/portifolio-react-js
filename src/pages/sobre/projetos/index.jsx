@@ -1,9 +1,49 @@
 import * as C from "./styles";
 
 export const Projetos = () =>{
+  
   return(
     <C.Container>
-      <h1>projetos</h1>
+     <C.ContainerProjetos>
+      <h2>pokedex-project</h2>
+      </C.ContainerProjetos>
+     <C.ContainerProjetos>
+      <h2>pokedex-project</h2>
+      </C.ContainerProjetos>
+     <C.ContainerProjetos>
+      <h2>pokedex-project</h2>
+      </C.ContainerProjetos>
+     <C.ContainerProjetos>
+      <h2>pokedex-project</h2>
+      </C.ContainerProjetos>
+     <C.ContainerProjetos>
+      <h2>pokedex-project</h2>
+      </C.ContainerProjetos>
+     <C.ContainerProjetos>
+      <h2>pokedex-project</h2>
+      </C.ContainerProjetos>
+     <C.ContainerProjetos>
+      <h2>pokedex-project</h2>
+      </C.ContainerProjetos>
+     <C.ContainerProjetos>
+      <h2>pokedex-project</h2>
+      </C.ContainerProjetos>
+     <C.ContainerProjetos>
+      <h2>pokedex-project</h2>
+      </C.ContainerProjetos>
+     <C.ContainerProjetos>
+      <h2>pokedex-project</h2>
+      </C.ContainerProjetos>
+     <C.ContainerProjetos>
+      <h2>pokedex-project</h2>
+      </C.ContainerProjetos>
+     <C.ContainerProjetos>
+      <h2>pokedex-project</h2>
+      </C.ContainerProjetos>
+   
+    
+     
+   
     </C.Container>
   )
 }

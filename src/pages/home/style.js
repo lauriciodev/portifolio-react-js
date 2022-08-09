@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const ContainerHome = styled.div`
-background: linear-gradient(to top , #03223f,#afcacc) ;
 width: 100%;
 height: 100vh;
 display: flex;

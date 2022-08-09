@@ -14,9 +14,7 @@ flex-direction: ${props => props.flexDirectionSer};
 gap: ${props => `${props.gapContainerSet}px`};
 transition: all .3s;
 
-@media screen and (max-width:400px){
-  position: fixed;
-}
+position: fixed;
 
 `
 

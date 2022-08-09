@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import { Route, Routes, Link, BrowserRouter} from "react-router-dom";
+import { Route, Routes, Link} from "react-router-dom";
 import { Linguagens } from './linguagens';
 import { Historia } from './historia';
 import { Projetos } from './projetos';
 import  * as C  from "./style";
 
-export const Sobre = () => {
+export const Sobre = (props) => {
   
   const [intern, setIntern] = useState(false);
   
@@ -20,9 +20,10 @@ export const Sobre = () => {
            
          <Routes>
            <Route path='sobre/projetos' element={<Projetos/>}/>
-           <Route path='sobre/historia' element={<Historia/>}/>
+           <Route path='sobre/historia' element={<Historia FotoSobre={props.FotoSobre}/>}/>
            <Route path='sobre/linguagens' element={<Linguagens/>}/>
           </Routes>
+
     </C.Container>
         
   )
