@@ -6,6 +6,7 @@ import { Sobre } from "./pages/sobre";
 import Foto from "./assets/img/lauricio.jpg";
 import FotoSobre from "./assets/img/laug1.jpg";
 import { Contato } from "./pages/contato";
+import { NotFound } from './pages/notFaund';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<Home foto={Foto} />} />
         <Route path="sobre/*" element={<Sobre FotoSobre={FotoSobre} />} />
         <Route path="/contato" element={<Contato />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Global />
