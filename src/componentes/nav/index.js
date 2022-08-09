@@ -1,7 +1,15 @@
-import  * as C  from "./style";
+/* eslint-disable jsx-a11y/alt-text */
+import { 
+  Container,
+  ContainerIcon,
+  ContainerLinks,
+  FotoContainer,
+  SocialIcon
+}  from "./style";
 import { Link } from "react-router-dom";
-import { FaArrowLeft,FaInstagram } from "react-icons/fa";
+import { FaArrowLeft, FaInstagram } from "react-icons/fa";
 import { useState } from 'react';
+import Foto from "../../assets/img/lauricio.jpg";
 
 export const Nav = (props) =>{
   const [iconStatus, setIconStatus] = useState(false)
@@ -15,7 +23,7 @@ const changeToggle = () =>{
 
   return(
 
-    <C.Container 
+    <Container
     backGroundColorContainerSet={"#010d23"} 
     heightContainerSet={"100"}
     widthContainerSet={iconStatus?"300":"0"}
@@ -26,7 +34,7 @@ const changeToggle = () =>{
     gapContainerSet={"10"}
     paddingTopContainerSet={"20"}
     >
-      <C.ContainerIcon 
+      <ContainerIcon 
       onClick={
         changeToggle
       }
@@ -38,28 +46,28 @@ const changeToggle = () =>{
       alignContainerIconSet={"center"}
       justifyContainerIconSet={"center"}>
          < FaArrowLeft/>
-      </C.ContainerIcon>
+      </ContainerIcon>
 
-      <C.FotoContainer displayFotoContainerSet={iconStatus?"block":"none"} 
+      <FotoContainer displayFotoContainerSet={iconStatus?"block":"none"} 
       widthFotoContainerSet={"100"} 
       maxWidthFotoContainerSet={"120"}
       >
-        <img src={props.Foto} />
+        <img src={Foto} />
 
-      </C.FotoContainer >
-      <C.socialIcon href='https://instagram.com/mohamed_lau.sql' target="_blank" displaySocialLinkSet={iconStatus?"block":"none"}>mohamed_lau.sql <FaInstagram/> </C.socialIcon>
+      </FotoContainer >
+      <SocialIcon href='https://instagram.com/mohamed_lau.sql' target="_blank" displaySocialLinkSet={iconStatus?"block":"none"}>mohamed_lau.sql <FaInstagram/> </SocialIcon>
 
 
-      <C.ContainerLinks displayContainerLinkSet={iconStatus?"flex":"none"}>
+      <ContainerLinks displayContainerLinkSet={iconStatus?"flex":"none"}>
       <Link onClick={changeToggle} to="/">Home</Link>
       <Link onClick={changeToggle} to="/sobre">Sobre</Link>
       <Link onClick={changeToggle} to="/contato">Contato</Link>
       
-      </C.ContainerLinks>
+      </ContainerLinks>
 
       
       
     
-    </C.Container>
+    </Container>
   )
 }

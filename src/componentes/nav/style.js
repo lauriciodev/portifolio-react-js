@@ -2,29 +2,29 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-width: ${props => `${props.widthContainerSet}px`};
-display: flex;
-height: ${props => `${props.heightContainerSet}vh`};
-padding: ${props => `${props.paddingContainerSet}px`};
-padding-top: ${props => `${props.paddingTopContainerSet}px`};
-background-color: ${props => props.backGroundColorContainerSet};
-align-items: ${props => props.alignContainerSet};
-justify-content: ${props => props.justifyContainerSet};
-flex-direction: ${props => props.flexDirectionSer};
-gap: ${props => `${props.gapContainerSet}px`};
-transition: all .3s;
+  width: ${props => `${props.widthContainerSet}px`};
+  display: flex;
+  height: ${props => `${props.heightContainerSet}vh`};
+  padding: ${props => `${props.paddingContainerSet}px`};
+  padding-top: ${props => `${props.paddingTopContainerSet}px`};
+  background-color: ${props => props.backGroundColorContainerSet};
+  align-items: ${props => props.alignContainerSet};
+  justify-content: ${props => props.justifyContainerSet};
+  flex-direction: ${props => props.flexDirectionSer};
+  gap: ${props => `${props.gapContainerSet}px`};
+  transition: all .3s;
 
-@media screen and (max-width:400px){
-  position: fixed;
-}
+  @media screen and (max-width:400px){
+    position: fixed;
+  }
 
 `
 
-export const socialIcon = styled.a`
-text-decoration: none;
-display: ${props => props.displaySocialLinkSet};
-font-size: 1rem;
-color: #038bbb;
+export const SocialIcon = styled.a`
+  text-decoration: none;
+  display: ${props => props.displaySocialLinkSet};
+  font-size: 1rem;
+  color: #038bbb;
 `
 
 

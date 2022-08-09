@@ -1,24 +1,31 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { FaDownload, FaGithub, FaGitlab, FaLinkedin } from 'react-icons/fa'
-import * as C from "./style"
+import { 
+  ContainerHome, 
+  ContainerFotoHome, 
+  TitleContainer, 
+  ContainerButtons 
+} from "./style"
+import Foto from "../../assets/img/lauricio.jpg";
 
-export const Home = (props) =>{
+export const Home = () =>{
   return(
-    <C.ContainerHome>
-    <C.ContainerFotoHome>
-     <img src={props.foto} alt="lauricio"/>
-    </C.ContainerFotoHome>
-      <C.TitleContainer>
+    <ContainerHome>
+    <ContainerFotoHome>
+     <img src={Foto} alt="lauricio"/>
+    </ContainerFotoHome>
+      <TitleContainer>
         <h1>Laurício De Souza</h1>
         <h5>Web Developer </h5>
-      </C.TitleContainer>
+      </TitleContainer>
 
-      <C.ContainerButtons>
-        <a href="#"><FaGithub/></a>
-        <a href="#"><FaGitlab/></a>
-        <a href="#"><FaLinkedin/></a>
-        <a href="#">Download CV <FaDownload/></a>
-      </C.ContainerButtons>
-    </C.ContainerHome>
+      <ContainerButtons>
+        <a href="#" rel="noreferrer"><FaGithub/></a>
+        <a href="#" rel="noreferrer"><FaGitlab/></a>
+        <a href="#" rel="noreferrer"><FaLinkedin/></a>
+        <a href="#" rel="noreferrer">Download CV <FaDownload/></a>
+      </ContainerButtons>
+    </ContainerHome>
    
   )
 }
