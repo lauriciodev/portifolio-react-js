@@ -50,6 +50,7 @@ const changeToggle = () =>{
 
       <FotoContainer displayFotoContainerSet={iconStatus?"block":"none"} 
       widthFotoContainerSet={"100"} 
+
       maxWidthFotoContainerSet={"120"}
       >
         <img src={Foto} />
