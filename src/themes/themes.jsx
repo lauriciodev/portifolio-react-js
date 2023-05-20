@@ -6,6 +6,7 @@ export const dark = {
   buttonColor: `${colors.DarkAlternativeColor}`,
   hover: `${colors.DarkSecundaryColor}`,
   card: `${colors.DarkAlternativeColor}`,
+  linksColor: `${colors.DarkAlternativeColor}`,
 };
 
 export const light = {
@@ -15,4 +16,5 @@ export const light = {
   textColor: `${colors.LightTextColor}`,
   card: `${colors.LightPrimaryColor}`,
   hover: `${colors.LightSecundaryColor}`,
+  linksColor: `${colors.LightAlternativeColor}`,
 };

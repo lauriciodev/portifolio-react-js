@@ -9,7 +9,7 @@ import About from "./pages/about";
 import Contact from "./pages/contact";
 
 function App() {
-  const [theme, setTheme] = useState(true);
+  const [theme, setTheme] = useState(false);
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <ThemeProvider theme={theme ? light : dark}>
@@ -19,7 +19,7 @@ function App() {
           <Route path="/about" element={<About />}>
             <Route index element={<p>principal</p>} />
             <Route path="history" element={<p>sub 1</p>} />
-            <Route path="skills" element={<p>sub 2</p>} />
+            <Route path="langs" element={<p>sub 2</p>} />
             <Route path="*" element={<p>Not found</p>} />
           </Route>
           <Route path="/contact" element={<Contact />} />
