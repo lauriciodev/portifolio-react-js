@@ -5,7 +5,7 @@ import { dark, light } from "./themes/themes";
 import { ThemeProvider, ThemeContext } from "styled-components";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
-import About from "./pages/About";
+import About from "./pages/about";
 import Contact from "./pages/contact";
 
 function App() {
@@ -16,10 +16,11 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about/*">
-            <Route index element={<About />} />
+          <Route path="/about" element={<About />}>
+            <Route index element={<p>principal</p>} />
             <Route path="history" element={<p>sub 1</p>} />
             <Route path="skills" element={<p>sub 2</p>} />
+            <Route path="*" element={<p>Not found</p>} />
           </Route>
           <Route path="/contact" element={<Contact />} />
         </Routes>
