@@ -2,7 +2,7 @@ import { Button } from "../../global/styles";
 import { Info, PictureContainer, ProfileContainer } from "./styled";
 import fotoLauricio from "../../assets/lauricio.jpg";
 
-export function Profile() {
+export default function Profile() {
   return (
     <ProfileContainer>
       <PictureContainer>
