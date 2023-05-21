@@ -9,6 +9,7 @@ import About from "./pages/about";
 import Contact from "./pages/contact";
 import AboutMain from "./components/aboutMain";
 import AboutHistory from "./components/aboutHistory";
+import Leguages from "./components/aboutLenguages";
 
 function App() {
   const [theme, setTheme] = useState(false);
@@ -21,7 +22,7 @@ function App() {
           <Route path="/about" element={<About />}>
             <Route index element={<AboutMain />} />
             <Route path="history" element={<AboutHistory />} />
-            <Route path="langs" element={<p>sub 2</p>} />
+            <Route path="langs" element={<Leguages />} />
             <Route path="*" element={<p>Not found</p>} />
           </Route>
           <Route path="/contact" element={<Contact />} />
