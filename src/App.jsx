@@ -8,6 +8,7 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import AboutMain from "./components/aboutMain";
+import AboutHistory from "./components/aboutHistory";
 
 function App() {
   const [theme, setTheme] = useState(false);
@@ -19,7 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />}>
             <Route index element={<AboutMain />} />
-            <Route path="history" element={<p>sub 1</p>} />
+            <Route path="history" element={<AboutHistory />} />
             <Route path="langs" element={<p>sub 2</p>} />
             <Route path="*" element={<p>Not found</p>} />
           </Route>

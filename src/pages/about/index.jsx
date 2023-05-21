@@ -8,6 +8,8 @@ export default function About() {
       <SubContainerAbout>
         <h1>Pagina sobre</h1>
         <ContainerLinks>
+          <Link to="/about">Sobre</Link>
+
           <Link to="/about/history">História</Link>
           <Link to="/about/langs">Linguagens</Link>
         </ContainerLinks>
