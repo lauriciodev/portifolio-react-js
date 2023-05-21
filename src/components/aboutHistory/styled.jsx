@@ -12,11 +12,11 @@ export const Container = styled.div`
   overflow-y: scroll;
 
   h1 {
-    color: white;
+    color: ${(props) => props.theme.textColor};
     text-align: left;
     width: 100%;
   }
   p {
-    color: white;
+    color: ${(props) => props.theme.textColor};
   }
 `;

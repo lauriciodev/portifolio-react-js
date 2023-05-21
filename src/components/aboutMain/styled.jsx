@@ -8,6 +8,6 @@ export const Container = styled.div`
   justify-content: center;
   img {
     width: 300px;
-    border: 1px solid white;
+    border: ${(props) => props.theme.textColor};
   }
 `;
