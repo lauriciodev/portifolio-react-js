@@ -7,6 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Contact from "./pages/contact";
+import AboutMain from "./components/aboutMain";
 
 function App() {
   const [theme, setTheme] = useState(false);
@@ -17,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />}>
-            <Route index element={<p>principal</p>} />
+            <Route index element={<AboutMain />} />
             <Route path="history" element={<p>sub 1</p>} />
             <Route path="langs" element={<p>sub 2</p>} />
             <Route path="*" element={<p>Not found</p>} />

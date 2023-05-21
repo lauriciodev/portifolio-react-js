@@ -8,6 +8,15 @@ export const ContainerAbout = styled.div`
   justify-content: center;
   width: 100%;
   max-width: 700px;
+  margin: 20px auto;
+`;
+export const SubContainerAbout = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 700px;
   background-color: aliceblue;
   margin: 20px auto;
 `;

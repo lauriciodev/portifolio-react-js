@@ -1,6 +1,6 @@
 import { Button } from "../../global/styles";
 import { Info, PictureContainer, ProfileContainer } from "./styled";
-import fotoLauricio from "../../assets/lauricio.jpg";
+import fotoLauricio from "../../assets/lau-hello.gif";
 
 export default function Profile() {
   return (
