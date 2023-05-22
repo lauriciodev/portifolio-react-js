@@ -11,6 +11,7 @@ body{
   margin: 0;
   background-color: ${(props) => props.theme.body};
   color: ${colors.TextColor};
+  overflow-x: hidden;
 
 
   a{

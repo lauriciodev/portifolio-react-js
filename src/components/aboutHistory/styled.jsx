@@ -8,7 +8,7 @@ export const Container = styled.div`
   justify-content: center;
   border: 1px solid white;
   flex-direction: column;
-  padding: 30px 20px;
+  padding: 130px 10px 10px 10px;
   overflow-y: scroll;
 
   h1 {
@@ -18,5 +18,17 @@ export const Container = styled.div`
   }
   p {
     color: ${(props) => props.theme.textColor};
+  }
+`;
+
+export const ContainerPic = styled.div`
+  width: 100%;
+  display: flex;
+  gap: 10px;
+
+  img {
+    width: 200px;
+    align-self: baseline;
+    border: 1px solid ${(props) => props.theme.textColor};
   }
 `;
