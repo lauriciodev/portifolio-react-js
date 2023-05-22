@@ -19,6 +19,10 @@ export const SubContainerAbout = styled.div`
   max-width: 700px;
   background-color: aliceblue;
   margin: 20px auto;
+
+  h1 {
+    color: black;
+  }
 `;
 
 export const ContainerLinks = styled.div`

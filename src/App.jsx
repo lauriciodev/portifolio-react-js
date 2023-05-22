@@ -10,6 +10,8 @@ import Contact from "./pages/contact";
 import AboutMain from "./components/aboutMain";
 import AboutHistory from "./components/aboutHistory";
 import Leguages from "./components/aboutLenguages";
+import Projects from "./pages/Pojects";
+import NotFound from "./pages/NotFound";
 
 function App() {
   const [theme, setTheme] = useState(false);
@@ -23,9 +25,10 @@ function App() {
             <Route index element={<AboutMain />} />
             <Route path="history" element={<AboutHistory />} />
             <Route path="langs" element={<Leguages />} />
-            <Route path="*" element={<p>Not found</p>} />
           </Route>
+          <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <GlobalStyle />
       </ThemeProvider>

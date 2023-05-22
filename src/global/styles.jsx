@@ -21,6 +21,14 @@ body{
   }
 
 
+
+  h1{
+    color: ${(props) => props.theme.textColor};
+    text-align:center ;
+
+  }
+
+
 }
 `;
 

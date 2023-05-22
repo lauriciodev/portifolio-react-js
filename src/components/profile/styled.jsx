@@ -28,4 +28,8 @@ export const Info = styled.div`
   text-align: center;
   width: 100%;
   max-width: 500px;
+
+  h1 {
+    color: black;
+  }
 `;
