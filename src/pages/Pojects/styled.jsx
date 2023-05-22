@@ -15,8 +15,9 @@ export const CardProjects = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5px;
-  border: 1px solid ${(props) => props.theme.textColor};
   padding: 3px;
+  text-align: center;
+  color: ${(props) => props.theme.textColor};
 
   img {
     width: 200px;
