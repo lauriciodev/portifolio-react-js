@@ -9,6 +9,6 @@ export const Container = styled.div`
 
   img {
     width: 100%;
-    max-width: 200px;
+    max-width: 100px;
   }
 `;
