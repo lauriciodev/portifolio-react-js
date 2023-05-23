@@ -3,26 +3,27 @@ import ProjectsData from "./projects";
 import { CardProjects, ContainerProjects, LinkProject } from "./styled";
 
 export default function Projects() {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState(ProjectsData);
   const [projectsPerPage, setProjectsPerpage] = useState(3);
   const [page, setPage] = useState(0);
   const [allProjects, setAllProjects] = useState([]);
 
-  useEffect(() => {
-    setProjects(ProjectsData);
-  });
+  useEffect(() => {}, []);
 
   function handleNextPage() {
-    setAllProjects(projects);
+    setAllProjects(ProjectsData);
     const nextPage = page + projectsPerPage;
     const nextProjects = allProjects.slice(
       nextPage,
       nextPage + projectsPerPage
     );
-    console.log(allProjects);
     projects.push(...nextProjects);
+
     setProjects(projects);
     setPage(nextPage);
+
+    console.log("proxima pagina>" + nextPage);
+    console.log("pagina atual>" + page);
   }
 
   return (
