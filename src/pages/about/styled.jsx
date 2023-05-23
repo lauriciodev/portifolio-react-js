@@ -18,7 +18,7 @@ export const SubContainerAbout = styled.div`
   width: 100%;
   max-width: 700px;
   background-color: aliceblue;
-  margin: 20px auto;
+  margin: 10px auto;
 
   h1 {
     color: black;
