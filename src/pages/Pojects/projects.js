@@ -51,6 +51,46 @@ const ProjectsData = [
     foto: proj7,
     link: "/projeto3",
   },
+  {
+    nome: "gerador de senhas",
+    foto: proj2,
+    link: "/projeto2",
+  },
+  {
+    nome: "pokedex",
+    foto: proj3,
+    link: "/projeto3",
+  },
+  {
+    nome: "Drum Kit",
+    foto: proj4,
+    link: "/projeto3",
+  },
+  {
+    nome: "Snake Game",
+    foto: proj6,
+    link: "/projeto3",
+  },
+  {
+    nome: "Note List",
+    foto: proj7,
+    link: "/projeto3",
+  },
+  {
+    nome: "Drum Kit",
+    foto: proj4,
+    link: "/projeto3",
+  },
+  {
+    nome: "Snake Game",
+    foto: proj6,
+    link: "/projeto3",
+  },
+  {
+    nome: "Note List",
+    foto: proj7,
+    link: "/projeto3",
+  },
 ];
 
 export default ProjectsData;
