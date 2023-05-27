@@ -9,10 +9,10 @@ export default function Projects() {
   const totalPages = Math.ceil(ProjectsData.length / projectsPerPage);
 
   useEffect(() => {
-    handleNextPage(page);
+    handlePage(page);
   }, []);
 
-  function handleNextPage(pageIndice) {
+  function handlePage(pageIndice) {
     let startProject = (pageIndice - 1) * projectsPerPage;
     let finalProject = startProject + projectsPerPage;
 
@@ -33,12 +33,10 @@ export default function Projects() {
       ))}
 
       {projects.length >= projectsPerPage && (
-        <button onClick={() => handleNextPage(page)}>Proxima pagina</button>
+        <button onClick={() => handlePage(page)}>Proxima pagina</button>
       )}
 
-      {page != 1 && (
-        <button onClick={() => handleNextPage(page - 2)}>voltar</button>
-      )}
+      {page > 2 && <button onClick={() => handlePage(page - 2)}>voltar</button>}
     </ContainerProjects>
   );
 }
