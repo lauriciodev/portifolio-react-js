@@ -1,10 +1,15 @@
 import { useEffect, useState } from "react";
 import ProjectsData from "./projects";
-import { CardProjects, ContainerProjects, LinkProject } from "./styled";
+import {
+  CardProjects,
+  ContainerButtons,
+  ContainerProjects,
+  LinkProject,
+} from "./styled";
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
-  const [projectsPerPage, setProjectsPerpage] = useState(8);
+  const [projectsPerPage, setProjectsPerpage] = useState(6);
   const [page, setPage] = useState(1);
   const totalPages = Math.ceil(ProjectsData.length / projectsPerPage);
 
@@ -23,20 +28,36 @@ export default function Projects() {
   }
 
   return (
-    <ContainerProjects>
-      {projects.map((project, index) => (
-        <CardProjects key={index}>
-          <p>{project.nome}</p>
-          <img src={project.foto} alt="" />
-          <LinkProject href={project.link}>Ver Projeto</LinkProject>
-        </CardProjects>
-      ))}
+    <>
+      <ContainerProjects>
+        {projects.map((project, index) => (
+          <CardProjects key={index}>
+            <p>{project.nome}</p>
+            <img src={project.foto} alt="" />
+            {project.online ? (
+              <LinkProject href={project.link} target="_blank">
+                Ver Online
+              </LinkProject>
+            ) : (
+              <LinkProject href={project.link} target="_blank">
+                Ver no Github
+              </LinkProject>
+            )}
+          </CardProjects>
+        ))}
+      </ContainerProjects>
 
-      {projects.length >= projectsPerPage && (
-        <button onClick={() => handlePage(page)}>Proxima pagina</button>
-      )}
+      <ContainerButtons>
+        {projects.length >= projectsPerPage && (
+          <LinkProject onClick={() => handlePage(page)}>
+            Proxima pagina
+          </LinkProject>
+        )}
 
-      {page > 2 && <button onClick={() => handlePage(page - 2)}>voltar</button>}
-    </ContainerProjects>
+        {page > 2 && (
+          <LinkProject onClick={() => handlePage(page - 2)}>voltar</LinkProject>
+        )}
+      </ContainerButtons>
+    </>
   );
 }
