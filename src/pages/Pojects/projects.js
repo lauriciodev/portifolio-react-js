@@ -64,7 +64,7 @@ const ProjectsData = [
     online: false,
   },
   {
-    nome: "Encontre Usuários Github",
+    nome: "Busque Usuários Github",
     foto: proj7,
     link: "https://github.com/lauriciodev/Github-users-typescript",
     online: false,

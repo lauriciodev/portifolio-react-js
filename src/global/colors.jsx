@@ -1,7 +1,7 @@
 //light
-export const LightPrimaryColor = "#acbbfc";
-export const LightSecundaryColor = "#3fa2f8";
-export const LightAlternativeColor = "#588ffd";
+export const LightPrimaryColor = "#446469";
+export const LightSecundaryColor = "#7099a0";
+export const LightAlternativeColor = "#64878c";
 export const LightTextColor = "#000000";
 export const LightAlternativeTextColor = "#9caee9";
 

@@ -9,7 +9,7 @@ import About from "./pages/about";
 import Contact from "./pages/contact";
 import AboutMain from "./components/aboutMain";
 import AboutHistory from "./components/aboutHistory";
-import Leguages from "./components/aboutLenguages";
+import Lenguages from "./components/aboutLenguages";
 import Projects from "./pages/Pojects";
 import NotFound from "./pages/NotFound";
 
@@ -22,9 +22,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />}>
-            <Route index element={<AboutMain />} />
-            <Route path="history" element={<AboutHistory />} />
-            <Route path="langs" element={<Leguages />} />
+            <Route index element={<AboutHistory />} />
+            <Route path="langs" element={<Lenguages />} />
           </Route>
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />

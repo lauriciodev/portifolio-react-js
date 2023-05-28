@@ -2,7 +2,7 @@ import styled from "styled-components";
 import * as colors from "../../global/colors";
 
 export const Container = styled.nav`
-  width: 100%;
+  width: 100vw;
   height: 40px;
   background-color: ${(props) => props.theme.navContainer};
   display: flex;

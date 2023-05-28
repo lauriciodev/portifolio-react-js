@@ -35,7 +35,7 @@ body{
 export const Button = styled.button`
   padding: 10px;
   background-color: ${(props) => props.theme.buttonColor};
-  border: 1px solid white;
+  border: 1px solid ${(props) => props.theme.textColor};
   color: ${(props) => props.theme.textColor};
   font-size: 1.1rem;
   font-weight: 700;

@@ -14,9 +14,9 @@ export const ProfileContainer = styled.div`
   gap: 40px;
 `;
 export const PictureContainer = styled.div`
-  width: 250px;
-  border: 1px solid white;
-  height: 250px;
+  width: 300px;
+  border-bottom: 1px solid white;
+  height: 300px;
 
   img {
     width: 100%;
