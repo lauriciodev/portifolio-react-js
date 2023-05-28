@@ -20,6 +20,29 @@ export const ContainerGif = styled.div`
   }
 `;
 
+export const ContainerSuccess = styled.div`
+  display: flex;
+`;
+
+export const SubContainerSuccess = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  p {
+    color: ${(props) => props.theme.textColor};
+    width: 100%;
+    font-size: 1.3rem;
+  }
+
+  a {
+    background-color: ${(props) => props.theme.buttonColor};
+    padding: 5px;
+    border: 1px solid ${(props) => props.theme.textColor};
+  }
+`;
+
 export const ContainerForm = styled.form`
   padding: 5px;
   display: flex;
