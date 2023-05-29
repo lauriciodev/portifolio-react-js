@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 450px;
+  height: 470px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,6 +10,10 @@ export const Container = styled.div`
   flex-direction: column;
   padding: 130px 20px 20px 20px;
   overflow-y: scroll;
+
+  @media screen and (max-width: 570px) {
+    height: 900px;
+  }
 
   h1 {
     color: ${(props) => props.theme.textColor};
@@ -24,10 +28,12 @@ export const Container = styled.div`
 export const ContainerPic = styled.div`
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 
   img {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     align-self: baseline;
     border: 1px solid ${(props) => props.theme.textColor};
   }
