@@ -43,7 +43,16 @@ export const SubContainerSuccess = styled.div`
   }
 `;
 
-export const ContainerForm = styled.form`
+export const ContainerForm = styled.div`
+  display: flex;
+  gap: 10px;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+`;
+
+export const SubContainerForm = styled.form`
   padding: 5px;
   display: flex;
   flex-direction: column;

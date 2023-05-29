@@ -12,7 +12,8 @@ export const Container = styled.nav`
   padding: 10px 0;
 `;
 export const ContainerLinks = styled.div`
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   display: flex;
   gap: 10px;
   align-items: center;

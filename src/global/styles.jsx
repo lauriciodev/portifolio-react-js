@@ -2,6 +2,11 @@ import { createGlobalStyle, styled } from "styled-components";
 import * as colors from "./colors";
 
 export const GlobalStyle = createGlobalStyle`
+
+*{
+
+}
+
 body{
   font-family: 'Ubuntu Mono', monospace;
   font-weight: 400;
@@ -11,7 +16,6 @@ body{
   margin: 0;
   background-color: ${(props) => props.theme.body};
   color: ${colors.TextColor};
-  overflow-x: hidden;
 
 
   a{

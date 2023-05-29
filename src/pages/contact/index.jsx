@@ -6,6 +6,7 @@ import {
   ContainerForm,
   ContainerGif,
   ContainerSuccess,
+  SubContainerForm,
   SubContainerSuccess,
 } from "./styled";
 import React, { useRef, useState } from "react";
@@ -53,19 +54,19 @@ export default function Contact() {
           </ContainerGif>
         </ContainerSuccess>
       ) : (
-        <>
-          <ContainerForm ref={form} onSubmit={sendEmail}>
+        <ContainerForm>
+          <SubContainerForm ref={form} onSubmit={sendEmail}>
             <h3>Entre em contato</h3>
             <input type="text" placeholder="Nome" name="user_name" />
             <input type="email" placeholder="Email" name="user_email" />
             <input type="text" placeholder="Assunto" name="subject" />
             <textarea placeholder="Mensagem" name="message" />
             <Button type="submit">Enviar</Button>
-          </ContainerForm>
+          </SubContainerForm>
           <ContainerGif>
             <img src={Contato} />
           </ContainerGif>
-        </>
+        </ContainerForm>
       )}
     </Container>
   );
