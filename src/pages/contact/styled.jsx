@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 
 export const Container = styled.div`
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -8,7 +9,7 @@ export const Container = styled.div`
   margin: 20px auto;
   border: 1px solid white;
   gap: 10px;
-  padding: 5px;
+  padding: 10px;
 `;
 
 export const ContainerGif = styled.div`
@@ -53,7 +54,6 @@ export const ContainerForm = styled.div`
 `;
 
 export const SubContainerForm = styled.form`
-  padding: 5px;
   display: flex;
   flex-direction: column;
   gap: 4px;

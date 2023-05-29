@@ -2,13 +2,13 @@ import { styled } from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 340px;
+  height: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid white;
   flex-direction: column;
-  padding: 130px 10px 10px 10px;
+  padding: 130px 20px 20px 20px;
   overflow-y: scroll;
 
   h1 {

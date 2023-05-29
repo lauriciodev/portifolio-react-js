@@ -9,7 +9,7 @@ export const Container = styled.nav`
   gap: 140px;
   align-items: center;
   justify-content: center;
-  padding: 10px 0;
+  padding: 15px 0;
 `;
 export const ContainerLinks = styled.div`
   width: 100%;
