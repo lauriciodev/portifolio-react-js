@@ -8,7 +8,7 @@ export const Container = styled.div`
   justify-content: center;
   border: 1px solid white;
   flex-direction: column;
-  padding: 130px 20px 20px 20px;
+  padding: 130px 20px 0px 20px;
   overflow-y: scroll;
 
   @media screen and (max-width: 570px) {
@@ -36,5 +36,9 @@ export const ContainerPic = styled.div`
     max-width: 200px;
     align-self: baseline;
     border: 1px solid ${(props) => props.theme.textColor};
+
+    @media screen and (max-width: 570px) {
+      max-width: 140px;
+    }
   }
 `;
