@@ -12,7 +12,7 @@ export const ContainerProjects = styled.div`
 
 export const CardProjects = styled.div`
   width: 100%;
-  max-width: 200px;
+  max-width: 210px;
   display: flex;
   flex-direction: column;
   border: 1px solid #3c3c3c;
@@ -22,6 +22,10 @@ export const CardProjects = styled.div`
   text-align: center;
   justify-content: center;
   color: ${(props) => props.theme.textColor};
+
+  @media screen and (max-width: 500px) {
+    max-width: 180px;
+  }
 
   p {
     background-color: ${(props) => props.theme.navContainer};
@@ -37,7 +41,7 @@ export const CardProjects = styled.div`
   }
 
   img {
-    width: 200px;
+    width: 100%;
   }
 `;
 

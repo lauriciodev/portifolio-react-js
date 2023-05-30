@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 
 export const Container = styled.div`
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -9,7 +10,11 @@ export const Container = styled.div`
   border: 1px solid white;
   box-sizing: border-box;
   gap: 10px;
+<<<<<<< HEAD
   padding: 12px;
+=======
+  padding: 10px;
+>>>>>>> 4c2fe730071791f537145376920c017c0f2433eb
 `;
 
 export const ContainerGif = styled.div`
@@ -59,7 +64,6 @@ export const ContainerForm = styled.div`
 `;
 
 export const SubContainerForm = styled.form`
-  padding: 5px;
   display: flex;
   flex-direction: column;
   gap: 4px;

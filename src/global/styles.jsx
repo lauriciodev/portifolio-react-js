@@ -4,7 +4,7 @@ import * as colors from "./colors";
 export const GlobalStyle = createGlobalStyle`
 
 *{
-
+box-sizing: border-box;
 }
 
 body{

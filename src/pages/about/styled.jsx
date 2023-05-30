@@ -9,6 +9,7 @@ export const ContainerAbout = styled.div`
   width: 100%;
   max-width: 700px;
   margin: 20px auto;
+  padding: 10px;
 `;
 export const SubContainerAbout = styled.div`
   display: flex;
