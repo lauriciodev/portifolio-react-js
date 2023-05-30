@@ -7,8 +7,9 @@ export const Container = styled.div`
   max-width: 700px;
   margin: 20px auto;
   border: 1px solid white;
+  box-sizing: border-box;
   gap: 10px;
-  padding: 5px;
+  padding: 12px;
 `;
 
 export const ContainerGif = styled.div`
@@ -22,6 +23,11 @@ export const ContainerGif = styled.div`
 
 export const ContainerSuccess = styled.div`
   display: flex;
+
+  @media screen and (max-width: 500px) {
+    gap: 20px;
+    flex-direction: column;
+  }
 `;
 
 export const SubContainerSuccess = styled.div`
