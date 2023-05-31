@@ -1,5 +1,10 @@
 import { Button } from "../../global/styles";
-import { Info, PictureContainer, ProfileContainer } from "./styled";
+import {
+  ButtonContact,
+  Info,
+  PictureContainer,
+  ProfileContainer,
+} from "./styled";
 import fotoLauricio from "../../assets/lauzim.gif";
 
 export default function Profile() {
@@ -12,7 +17,12 @@ export default function Profile() {
         <h1>Lauricio De Sousa</h1>
         <h3>Desenvolvedor Web FullStack</h3>
       </Info>
-      <Button>Entrar em contato</Button>
+      <ButtonContact
+        href="https://api.whatsapp.com/send/?phone=5598984867618&text&app_absent=0"
+        target="_blank"
+      >
+        Entrar em contato
+      </ButtonContact>
     </ProfileContainer>
   );
 }

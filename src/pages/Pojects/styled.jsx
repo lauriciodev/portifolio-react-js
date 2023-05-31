@@ -27,6 +27,10 @@ export const CardProjects = styled.div`
     max-width: 180px;
   }
 
+  @media screen and (max-width: 370px) {
+    max-width: 160px;
+  }
+
   p {
     background-color: ${(props) => props.theme.navContainer};
     visibility: hidden;

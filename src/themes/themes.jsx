@@ -3,7 +3,7 @@ export const dark = {
   navContainer: `${colors.DarkAlternativeColor}`,
   body: `${colors.DarkPrimaryColor}`,
   textColor: `${colors.DarkTextColor}`,
-  buttonColor: `${colors.DarkAlternativeColor}`,
+  buttonColor: `${colors.DarkSecundaryColor}`,
   hover: `${colors.DarkSecundaryColor}`,
   card: `${colors.DarkAlternativeColor}`,
   linksColor: `${colors.DarkSecundaryColor}`,

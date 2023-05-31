@@ -24,7 +24,6 @@ export default function Projects() {
     let projectsIn = ProjectsData.slice(startProject, finalProject);
     setProjects(projectsIn);
     setPage(pageIndice + 1);
-    console.log(page);
   }
 
   return (

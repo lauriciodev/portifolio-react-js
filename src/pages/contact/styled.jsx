@@ -10,11 +10,7 @@ export const Container = styled.div`
   border: 1px solid white;
   box-sizing: border-box;
   gap: 10px;
-<<<<<<< HEAD
   padding: 12px;
-=======
-  padding: 10px;
->>>>>>> 4c2fe730071791f537145376920c017c0f2433eb
 `;
 
 export const ContainerGif = styled.div`
