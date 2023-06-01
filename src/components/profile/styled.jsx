@@ -3,15 +3,14 @@ import styled from "styled-components";
 export const ProfileContainer = styled.div`
   width: 100%;
   max-width: 600px;
-  height: 550px;
   background-color: ${(props) => props.theme.card};
   margin: 10px auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 40px;
-  padding: 10px;
+  gap: 10px;
+  padding: 30px;
 `;
 export const PictureContainer = styled.div`
   width: 300px;
@@ -41,4 +40,15 @@ export const ButtonContact = styled.a`
   color: ${(props) => props.theme.textColor};
   font-size: 1.1rem;
   font-weight: 700;
+`;
+
+export const SocialContainer = styled.div`
+  background-color: aliceblue;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+
+  svg {
+    font-size: 1.3rem;
+  }
 `;
