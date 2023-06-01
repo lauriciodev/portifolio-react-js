@@ -1,4 +1,5 @@
 import { Button } from "../../global/styles";
+import curriculo from "../../assets/curriculo/curriculo.pdf";
 import {
   FaCodepen,
   FaDownload,
@@ -26,13 +27,26 @@ export default function Profile() {
         <h3>Desenvolvedor Web FullStack</h3>
       </Info>
       <SocialContainer>
-        <FaGithub />
-        <FaGitlab />
-        <FaLinkedin />
-        <FaCodepen />
+        <ButtonContact href="https://github.com/lauriciodev" target="_blank">
+          <FaGithub />
+        </ButtonContact>
+        <ButtonContact href="https://gitlab.com/Lauricio" target="_blank">
+          <FaGitlab />
+        </ButtonContact>
+        <ButtonContact
+          href="https://www.linkedin.com/in/lauricio-de-sousa-776b04215/"
+          target="_blank"
+        >
+          <FaLinkedin />
+        </ButtonContact>
+        <ButtonContact href="https://codepen.io/lauricio_dev" target="_blank">
+          <FaCodepen />
+        </ButtonContact>
       </SocialContainer>
       <ButtonContact
-        href="https://api.whatsapp.com/send/?phone=5598984867618&text&app_absent=0"
+        href={curriculo}
+        download={curriculo}
+        typr="Aplication/pdf"
         target="_blank"
       >
         Baixar Currículo <FaDownload />
