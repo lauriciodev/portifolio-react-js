@@ -12,6 +12,7 @@ export const Container = styled.nav`
   padding: 15px 0;
   position: fixed;
   top: 0;
+  z-index: 400;
 `;
 export const ContainerLinks = styled.div`
   width: 100%;
