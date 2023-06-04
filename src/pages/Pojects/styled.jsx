@@ -6,7 +6,7 @@ export const ContainerProjects = styled.div`
   display: flex;
   gap: 5px;
   flex-wrap: wrap;
-  margin: 20px auto;
+  margin: 50px auto;
   justify-content: center;
 `;
 

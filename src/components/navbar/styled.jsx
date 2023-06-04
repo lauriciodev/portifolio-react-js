@@ -10,6 +10,8 @@ export const Container = styled.nav`
   align-items: center;
   justify-content: center;
   padding: 15px 0;
+  position: fixed;
+  top: 0;
 `;
 export const ContainerLinks = styled.div`
   width: 100%;

@@ -4,13 +4,13 @@ export const ProfileContainer = styled.div`
   width: 100%;
   max-width: 600px;
   background-color: ${(props) => props.theme.card};
-  margin: 10px auto;
+  margin: 45px auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-  padding: 30px;
+  padding: 10px;
 `;
 export const PictureContainer = styled.div`
   width: 300px;

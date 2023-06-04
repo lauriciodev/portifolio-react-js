@@ -8,7 +8,7 @@ export const ContainerAbout = styled.div`
   justify-content: center;
   width: 100%;
   max-width: 700px;
-  margin: 20px auto;
+  margin: 40px auto;
   padding: 10px;
 `;
 export const SubContainerAbout = styled.div`
