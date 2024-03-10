@@ -4,7 +4,7 @@ export const ProfileContainer = styled.div`
   width: 100%;
   max-width: 600px;
   background-color: ${(props) => props.theme.card};
-  margin: 45px auto;
+  margin: 50px auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,9 +13,10 @@ export const ProfileContainer = styled.div`
   padding: 10px;
 `;
 export const PictureContainer = styled.div`
-  width: 300px;
+  width: 260px;
   border-bottom: 1px solid white;
-  height: 300px;
+  height: 260px;
+  padding-bottom: 10px;
 
   img {
     width: 100%;
